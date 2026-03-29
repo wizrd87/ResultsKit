@@ -1,0 +1,258 @@
+{
+  "ResultsKit.dll": {
+    "C:\\bin\\Projects\\svc.results\\src\\ResultsKit\\ConflictError.cs": {
+      "ResultsKit.ConflictError": {
+        "System.String ResultsKit.ConflictError::get_Resource()": {
+          "Lines": {
+            "18": 2
+          },
+          "Branches": []
+        },
+        "System.Object ResultsKit.ConflictError::get_Reference()": {
+          "Lines": {
+            "23": 2
+          },
+          "Branches": []
+        },
+        "System.Object ResultsKit.ConflictError::get_ConflictingReference()": {
+          "Lines": {
+            "28": 2
+          },
+          "Branches": []
+        },
+        "System.Void ResultsKit.ConflictError::.ctor(System.String,System.Object,System.Object)": {
+          "Lines": {
+            "13": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\bin\\Projects\\svc.results\\src\\ResultsKit\\Error.cs": {
+      "ResultsKit.Error": {
+        "System.String ResultsKit.Error::get_Code()": {
+          "Lines": {
+            "22": 18
+          },
+          "Branches": []
+        },
+        "System.String ResultsKit.Error::get_Message()": {
+          "Lines": {
+            "27": 18
+          },
+          "Branches": []
+        },
+        "System.Void ResultsKit.Error::.ctor(System.String,System.String)": {
+          "Lines": {
+            "13": 9,
+            "14": 9,
+            "15": 9,
+            "16": 9,
+            "17": 9
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\bin\\Projects\\svc.results\\src\\ResultsKit\\NotFoundError.cs": {
+      "ResultsKit.NotFoundError": {
+        "System.String ResultsKit.NotFoundError::get_Resource()": {
+          "Lines": {
+            "17": 2
+          },
+          "Branches": []
+        },
+        "System.Object ResultsKit.NotFoundError::get_Reference()": {
+          "Lines": {
+            "22": 2
+          },
+          "Branches": []
+        },
+        "System.Void ResultsKit.NotFoundError::.ctor(System.String,System.Object)": {
+          "Lines": {
+            "12": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\bin\\Projects\\svc.results\\src\\ResultsKit\\Result.cs": {
+      "ResultsKit.ResultType": {
+        "System.Void ResultsKit.ResultType::.cctor()": {
+          "Lines": {
+            "12": 1,
+            "13": 1,
+            "14": 1,
+            "15": 1
+          },
+          "Branches": []
+        }
+      },
+      "ResultsKit.Result": {
+        "System.Boolean ResultsKit.Result::get_Success()": {
+          "Lines": {
+            "38": 18
+          },
+          "Branches": []
+        },
+        "ResultsKit.Error ResultsKit.Result::get_Error()": {
+          "Lines": {
+            "43": 13
+          },
+          "Branches": []
+        },
+        "System.Boolean ResultsKit.Result::get_IsFailure()": {
+          "Lines": {
+            "48": 5
+          },
+          "Branches": []
+        },
+        "ResultsKit.Result ResultsKit.Result::Fail(ResultsKit.Error)": {
+          "Lines": {
+            "56": 2,
+            "57": 2,
+            "58": 2
+          },
+          "Branches": []
+        },
+        "ResultsKit.Result`1<T> ResultsKit.Result::FailResult(ResultsKit.Error)": {
+          "Lines": {
+            "67": 2,
+            "68": 2,
+            "69": 2
+          },
+          "Branches": []
+        },
+        "ResultsKit.Result ResultsKit.Result::Ok()": {
+          "Lines": {
+            "76": 1,
+            "77": 1,
+            "78": 1
+          },
+          "Branches": []
+        },
+        "ResultsKit.Result`1<T> ResultsKit.Result::OkResult(T)": {
+          "Lines": {
+            "87": 3,
+            "88": 3,
+            "89": 1,
+            "90": 1,
+            "93": 2,
+            "94": 3
+          },
+          "Branches": [
+            {
+              "Line": 88,
+              "Offset": 12,
+              "EndOffset": 14,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 88,
+              "Offset": 12,
+              "EndOffset": 34,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            }
+          ]
+        },
+        "ResultsKit.Result`1<T> ResultsKit.Result::PartialResult(T,ResultsKit.Error)": {
+          "Lines": {
+            "104": 2,
+            "105": 2,
+            "106": 2
+          },
+          "Branches": []
+        },
+        "ResultsKit.Result ResultsKit.Result::Partial(ResultsKit.Error)": {
+          "Lines": {
+            "114": 1,
+            "115": 1,
+            "116": 1
+          },
+          "Branches": []
+        },
+        "ResultsKit.Result ResultsKit.Result::op_Implicit(ResultsKit.Error)": {
+          "Lines": {
+            "118": 1
+          },
+          "Branches": []
+        },
+        "System.Void ResultsKit.Result::.ctor(System.Boolean,ResultsKit.Error)": {
+          "Lines": {
+            "29": 14,
+            "30": 14,
+            "31": 14,
+            "32": 14,
+            "33": 14
+          },
+          "Branches": []
+        }
+      },
+      "ResultsKit.Result`1": {
+        "T ResultsKit.Result`1::get_Value()": {
+          "Lines": {
+            "143": 17
+          },
+          "Branches": []
+        },
+        "ResultsKit.Result`1<T> ResultsKit.Result`1::op_Implicit(ResultsKit.Error)": {
+          "Lines": {
+            "150": 1
+          },
+          "Branches": []
+        },
+        "ResultsKit.Result`1<T> ResultsKit.Result`1::op_Implicit(T)": {
+          "Lines": {
+            "157": 1
+          },
+          "Branches": []
+        },
+        "System.Void ResultsKit.Result`1::.ctor(T,System.Boolean,ResultsKit.Error)": {
+          "Lines": {
+            "135": 9,
+            "136": 9,
+            "137": 9,
+            "138": 9
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\bin\\Projects\\svc.results\\src\\ResultsKit\\UnauthorizedError.cs": {
+      "ResultsKit.UnauthorizedError": {
+        "System.String ResultsKit.UnauthorizedError::get_Action()": {
+          "Lines": {
+            "13": 2
+          },
+          "Branches": []
+        },
+        "System.Void ResultsKit.UnauthorizedError::.ctor(System.String)": {
+          "Lines": {
+            "11": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\bin\\Projects\\svc.results\\src\\ResultsKit\\ValidationError.cs": {
+      "ResultsKit.ValidationError": {
+        "System.String[] ResultsKit.ValidationError::get_Messages()": {
+          "Lines": {
+            "13": 3
+          },
+          "Branches": []
+        },
+        "System.Void ResultsKit.ValidationError::.ctor(System.String[])": {
+          "Lines": {
+            "11": 2
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}

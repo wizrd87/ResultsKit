@@ -1,0 +1,68 @@
+name: Publish ResultsKit
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/publish-resultskit.yml'
+      - 'src/ResultsKit/**'
+      - 'test/ResultsKit.Tests/**'
+      - 'README.md'
+
+permissions:
+  contents: read
+
+jobs:
+  build-pack-publish:
+    runs-on: ubuntu-latest
+
+    env:
+      DOTNET_VERSION: '10.0.x'
+      VERSION_PREFIX: '1.0'
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+
+      - name: Calculate package version
+        id: version
+        shell: pwsh
+        run: |
+          $patch = [int]${{ github.run_number }} - 1
+          $version = "$env:VERSION_PREFIX.$patch"
+          "package_version=$version" >> $env:GITHUB_OUTPUT
+          "Using package version $version"
+
+      - name: Restore
+        run: dotnet restore src/ResultsKit/ResultsKit.csproj
+
+      - name: Test
+        run: dotnet test test/ResultsKit.Tests/ResultsKit.Tests.csproj --configuration Release --no-restore
+
+      - name: Pack
+        run: dotnet pack src/ResultsKit/ResultsKit.csproj --configuration Release --no-restore -p:Version=${{ steps.version.outputs.package_version }} -o ./artifacts/resultskit
+
+      - name: Push package to NuGet
+        env:
+          NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
+        run: |
+          dotnet nuget push "./artifacts/resultskit/*.nupkg" \
+            --api-key "$NUGET_API_KEY" \
+            --source "https://api.nuget.org/v3/index.json" \
+            --skip-duplicate
+
+      - name: Push symbols to NuGet
+        env:
+          NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
+        run: |
+          dotnet nuget push "./artifacts/resultskit/*.snupkg" \
+            --api-key "$NUGET_API_KEY" \
+            --source "https://api.nuget.org/v3/index.json" \
+            --skip-duplicate

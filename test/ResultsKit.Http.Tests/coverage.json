@@ -1,0 +1,528 @@
+{
+  "ResultsKit.Http.dll": {
+    "C:\\bin\\Projects\\svc.results\\src\\ResultsKit.Http\\ActionResultExtension.cs": {
+      "ResultsKit.Http.Process": {
+        "Microsoft.AspNetCore.Mvc.ActionResult ResultsKit.Http.Process::MvcResult(ResultsKit.Result)": {
+          "Lines": {
+            "10": 9,
+            "11": 9,
+            "12": 9,
+            "13": 11,
+            "14": 13,
+            "15": 1,
+            "16": 1,
+            "17": 1,
+            "18": 1,
+            "19": 9,
+            "20": 9
+          },
+          "Branches": [
+            {
+              "Line": 13,
+              "Offset": 15,
+              "EndOffset": 19,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            },
+            {
+              "Line": 13,
+              "Offset": 15,
+              "EndOffset": 27,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 7
+            },
+            {
+              "Line": 14,
+              "Offset": 33,
+              "EndOffset": 35,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 7
+            },
+            {
+              "Line": 14,
+              "Offset": 41,
+              "EndOffset": 45,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 6
+            },
+            {
+              "Line": 14,
+              "Offset": 33,
+              "EndOffset": 59,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 1
+            },
+            {
+              "Line": 14,
+              "Offset": 41,
+              "EndOffset": 59,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 1
+            }
+          ]
+        },
+        "Microsoft.AspNetCore.Mvc.ActionResult`1<T> ResultsKit.Http.Process::MvcResult(ResultsKit.Result`1<T>)": {
+          "Lines": {
+            "23": 2,
+            "24": 2,
+            "25": 2,
+            "26": 3,
+            "27": 1,
+            "28": 2,
+            "29": 2
+          },
+          "Branches": [
+            {
+              "Line": 26,
+              "Offset": 15,
+              "EndOffset": 17,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 2
+            },
+            {
+              "Line": 26,
+              "Offset": 28,
+              "EndOffset": 32,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 1
+            },
+            {
+              "Line": 26,
+              "Offset": 15,
+              "EndOffset": 51,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            },
+            {
+              "Line": 26,
+              "Offset": 28,
+              "EndOffset": 51,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            }
+          ]
+        },
+        "Microsoft.AspNetCore.Mvc.ObjectResult ResultsKit.Http.Process::ToObjectResult(ResultsKit.Error)": {
+          "Lines": {
+            "32": 6,
+            "33": 6,
+            "34": 6,
+            "35": 6,
+            "36": 6,
+            "37": 6,
+            "38": 6
+          },
+          "Branches": []
+        },
+        "Microsoft.AspNetCore.Mvc.ProblemDetails ResultsKit.Http.Process::CreateProblemDetails(ResultsKit.Error,System.Int32)": {
+          "Lines": {
+            "41": 7,
+            "42": 7,
+            "43": 7,
+            "44": 7,
+            "45": 7,
+            "46": 7,
+            "47": 7,
+            "49": 7,
+            "52": 1,
+            "53": 1,
+            "54": 1,
+            "56": 1,
+            "57": 1,
+            "58": 1,
+            "59": 1,
+            "61": 1,
+            "62": 1,
+            "63": 2,
+            "64": 1,
+            "65": 1,
+            "68": 7,
+            "69": 7
+          },
+          "Branches": [
+            {
+              "Line": 49,
+              "Offset": 62,
+              "EndOffset": 64,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 6
+            },
+            {
+              "Line": 49,
+              "Offset": 73,
+              "EndOffset": 75,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 5
+            },
+            {
+              "Line": 49,
+              "Offset": 84,
+              "EndOffset": 89,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 4
+            },
+            {
+              "Line": 49,
+              "Offset": 62,
+              "EndOffset": 112,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            },
+            {
+              "Line": 49,
+              "Offset": 73,
+              "EndOffset": 165,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 1
+            },
+            {
+              "Line": 49,
+              "Offset": 84,
+              "EndOffset": 238,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 1
+            },
+            {
+              "Line": 49,
+              "Offset": 100,
+              "EndOffset": 263,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 2
+            },
+            {
+              "Line": 63,
+              "Offset": 270,
+              "EndOffset": 274,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 1
+            },
+            {
+              "Line": 49,
+              "Offset": 100,
+              "EndOffset": 300,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 7
+            },
+            {
+              "Line": 63,
+              "Offset": 270,
+              "EndOffset": 300,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 7
+            }
+          ]
+        }
+      }
+    },
+    "C:\\bin\\Projects\\svc.results\\src\\ResultsKit.Http\\IResultExtension.cs": {
+      "ResultsKit.Http.Process": {
+        "Microsoft.AspNetCore.Http.IResult ResultsKit.Http.Process::ApiResult(ResultsKit.Result)": {
+          "Lines": {
+            "9": 9,
+            "10": 9,
+            "11": 9,
+            "12": 10,
+            "13": 15,
+            "14": 1,
+            "15": 9,
+            "16": 9
+          },
+          "Branches": [
+            {
+              "Line": 12,
+              "Offset": 15,
+              "EndOffset": 19,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            },
+            {
+              "Line": 12,
+              "Offset": 15,
+              "EndOffset": 28,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 8
+            },
+            {
+              "Line": 13,
+              "Offset": 34,
+              "EndOffset": 36,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 8
+            },
+            {
+              "Line": 13,
+              "Offset": 42,
+              "EndOffset": 46,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 7
+            },
+            {
+              "Line": 13,
+              "Offset": 34,
+              "EndOffset": 60,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 1
+            },
+            {
+              "Line": 13,
+              "Offset": 42,
+              "EndOffset": 60,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 1
+            }
+          ]
+        },
+        "Microsoft.AspNetCore.Http.IResult ResultsKit.Http.Process::ApiResult(ResultsKit.Result`1<T>)": {
+          "Lines": {
+            "19": 3,
+            "20": 3,
+            "21": 3,
+            "22": 5,
+            "23": 1,
+            "24": 3,
+            "25": 3
+          },
+          "Branches": [
+            {
+              "Line": 22,
+              "Offset": 15,
+              "EndOffset": 19,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 2
+            },
+            {
+              "Line": 22,
+              "Offset": 15,
+              "EndOffset": 33,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            }
+          ]
+        },
+        "Microsoft.AspNetCore.Http.IResult ResultsKit.Http.Process::ToProblemResult(ResultsKit.Error)": {
+          "Lines": {
+            "28": 7,
+            "29": 7,
+            "30": 7,
+            "31": 7,
+            "32": 7,
+            "33": 7,
+            "34": 7
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.Dictionary`2<System.String,System.Object> ResultsKit.Http.Process::CreateExtensions(ResultsKit.Error)": {
+          "Lines": {
+            "37": 7,
+            "38": 7,
+            "40": 7,
+            "43": 1,
+            "44": 1,
+            "45": 1,
+            "47": 1,
+            "48": 1,
+            "49": 1,
+            "50": 1,
+            "52": 1,
+            "53": 1,
+            "54": 2,
+            "55": 1,
+            "56": 1,
+            "59": 7,
+            "60": 7
+          },
+          "Branches": [
+            {
+              "Line": 40,
+              "Offset": 23,
+              "EndOffset": 25,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 6
+            },
+            {
+              "Line": 40,
+              "Offset": 34,
+              "EndOffset": 36,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 5
+            },
+            {
+              "Line": 40,
+              "Offset": 45,
+              "EndOffset": 47,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 4
+            },
+            {
+              "Line": 40,
+              "Offset": 23,
+              "EndOffset": 67,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            },
+            {
+              "Line": 40,
+              "Offset": 34,
+              "EndOffset": 107,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 1
+            },
+            {
+              "Line": 40,
+              "Offset": 45,
+              "EndOffset": 165,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 1
+            },
+            {
+              "Line": 40,
+              "Offset": 58,
+              "EndOffset": 185,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 2
+            },
+            {
+              "Line": 54,
+              "Offset": 192,
+              "EndOffset": 196,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 1
+            },
+            {
+              "Line": 40,
+              "Offset": 58,
+              "EndOffset": 217,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 7
+            },
+            {
+              "Line": 54,
+              "Offset": 192,
+              "EndOffset": 217,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 7
+            }
+          ]
+        },
+        "System.Int32 ResultsKit.Http.Process::GetStatusCode(ResultsKit.Error)": {
+          "Lines": {
+            "63": 13,
+            "64": 13,
+            "65": 13,
+            "66": 4,
+            "67": 2,
+            "68": 2,
+            "69": 2,
+            "70": 3,
+            "71": 13,
+            "72": 13
+          },
+          "Branches": [
+            {
+              "Line": 64,
+              "Offset": 11,
+              "EndOffset": 13,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 9
+            },
+            {
+              "Line": 64,
+              "Offset": 19,
+              "EndOffset": 21,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 7
+            },
+            {
+              "Line": 64,
+              "Offset": 27,
+              "EndOffset": 29,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 5
+            },
+            {
+              "Line": 64,
+              "Offset": 11,
+              "EndOffset": 39,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 4
+            },
+            {
+              "Line": 64,
+              "Offset": 19,
+              "EndOffset": 47,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 2
+            },
+            {
+              "Line": 64,
+              "Offset": 27,
+              "EndOffset": 55,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 2
+            },
+            {
+              "Line": 64,
+              "Offset": 35,
+              "EndOffset": 63,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 2
+            },
+            {
+              "Line": 64,
+              "Offset": 35,
+              "EndOffset": 71,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 3
+            }
+          ]
+        }
+      }
+    }
+  }
+}

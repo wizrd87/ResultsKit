@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Version Condition=" '$(VERSIONNUMBER)' == '' ">1.0.0</Version>
+		<Version Condition=" '$(VERSIONNUMBER)' != '' ">$(VERSIONNUMBER)</Version>
+		<PackageVersion>$(Version)</PackageVersion>
+		<Authors>Wizrd87</Authors>
+		<Description>Translates results pattern to http status codes</Description>
+		<Configurations>Debug;Release</Configurations>
+		<AssemblyName>ResultsKit.Http</AssemblyName>
+		<RootNamespace>ResultsKit.Http</RootNamespace>
+		<PackageId>ResultsKit.Http</PackageId>
+		<PackageTags>results;pattern;http;aspnetcore</PackageTags>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/OWNER/REPO</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/OWNER/REPO.git</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ResultsKit\ResultsKit.csproj" />
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+
+
+</Project>
