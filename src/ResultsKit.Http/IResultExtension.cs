@@ -5,6 +5,22 @@ namespace ResultsKit.Http;
 
 public static partial class Process
 {
+    public static async Task<IResult> GetResult<T>(
+        Func<Task<Result<T>>> action)
+        => ApiResult(await action());
+
+    public static Task<IResult> GetResult<T>(
+        Func<Result<T>> action)
+        => Task.FromResult(ApiResult(action()));
+    
+    public static async Task<IResult> GetResult(
+        Func<Task<Result>> action)
+        => ApiResult(await action());
+
+    public static Task<IResult> GetResult(
+        Func<Result> action)
+        => Task.FromResult(ApiResult(action()));
+    
     public static IResult ApiResult(Result result)
     {
         return result switch

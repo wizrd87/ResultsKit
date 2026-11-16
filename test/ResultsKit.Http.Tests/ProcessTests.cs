@@ -101,6 +101,40 @@ public sealed class ProcessTests
     }
 
     [Fact]
+    public async Task GetResultAsyncFunc_ReturnsMappedValue()
+    {
+        var result = await Process.GetResult(async () => await Task.FromResult(Result.Ok()));
+
+        Assert.IsType<Ok>(result);
+    }
+
+    [Fact]
+    public async Task GetResultSyncFunc_ReturnsMappedValue()
+    {
+        var result = await Process.GetResult(() => Result.Ok());
+
+        Assert.IsType<Ok>(result);
+    }
+
+    [Fact]
+    public async Task GetResultOfTAsyncFunc_ReturnsMappedValue()
+    {
+        var result = await Process.GetResult(async () => await Task.FromResult(Result.OkResult("value")));
+
+        var ok = Assert.IsType<Ok<string>>(result);
+        Assert.Equal("value", ok.Value);
+    }
+
+    [Fact]
+    public async Task GetResultOfTSyncFunc_ReturnsMappedValue()
+    {
+        var result = await Process.GetResult(() => Result.OkResult("value"));
+
+        var ok = Assert.IsType<Ok<string>>(result);
+        Assert.Equal("value", ok.Value);
+    }
+
+    [Fact]
     public void ApiResultOfT_FallsBackToNonGenericHandler_ForFailure()
     {
         var result = Assert.IsType<ProblemHttpResult>(Process.ApiResult(Result.FailResult<string>(new Error("custom", "failure"))));

@@ -97,6 +97,23 @@ app.MapGet("/users/{id:int}", (int id, UserService service) =>
 
 Error responses are returned as problem details payloads with neutral extension fields such as `resource`, `reference`, `conflictingReference`, `messages`, and `action`.
 
+If you prefer to pass a delegate instead of a resolved result, the library also includes the following convenience overloads:
+
+- `Process.GetResult(Func<Result>)`
+- `Process.GetResult(Func<Task<Result>>)`
+- `Process.GetResult<T>(Func<Result<T>>)`
+- `Process.GetResult<T>(Func<Task<Result<T>>>)`
+
+```csharp
+using ResultsKit.Http;
+
+app.MapGet("/users/{id:int}", (int id, UserService service) =>
+    Process.GetResult(() => service.GetUser(id)));
+
+app.MapGet("/users/{id:int}/details", (int id, UserService service) =>
+    Process.GetResult(() => service.GetUserDetailsAsync(id)));
+```
+
 ### MVC / Controllers
 
 ```csharp
