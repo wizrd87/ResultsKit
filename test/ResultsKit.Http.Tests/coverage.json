@@ -1,6 +1,6 @@
 {
   "ResultsKit.Http.dll": {
-    "C:\\bin\\Projects\\svc.results\\src\\ResultsKit.Http\\ActionResultExtension.cs": {
+    "/Users/camgra/Projects/ResultsKit/src/ResultsKit.Http/ActionResultExtension.cs": {
       "ResultsKit.Http.Process": {
         "Microsoft.AspNetCore.Mvc.ActionResult ResultsKit.Http.Process::MvcResult(ResultsKit.Result)": {
           "Lines": {
@@ -234,22 +234,28 @@
         }
       }
     },
-    "C:\\bin\\Projects\\svc.results\\src\\ResultsKit.Http\\IResultExtension.cs": {
+    "/Users/camgra/Projects/ResultsKit/src/ResultsKit.Http/IResultExtension.cs": {
       "ResultsKit.Http.Process": {
+        "System.Threading.Tasks.Task`1<Microsoft.AspNetCore.Http.IResult> ResultsKit.Http.Process::ApiResult(System.Func`1<ResultsKit.Result`1<T>>)": {
+          "Lines": {
+            "13": 1
+          },
+          "Branches": []
+        },
         "Microsoft.AspNetCore.Http.IResult ResultsKit.Http.Process::ApiResult(ResultsKit.Result)": {
           "Lines": {
-            "9": 9,
-            "10": 9,
-            "11": 9,
-            "12": 10,
-            "13": 15,
-            "14": 1,
-            "15": 9,
-            "16": 9
+            "17": 9,
+            "18": 9,
+            "19": 9,
+            "20": 10,
+            "21": 15,
+            "22": 1,
+            "23": 9,
+            "24": 9
           },
           "Branches": [
             {
-              "Line": 12,
+              "Line": 20,
               "Offset": 15,
               "EndOffset": 19,
               "Path": 1,
@@ -257,7 +263,7 @@
               "Hits": 1
             },
             {
-              "Line": 12,
+              "Line": 20,
               "Offset": 15,
               "EndOffset": 28,
               "Path": 0,
@@ -265,7 +271,7 @@
               "Hits": 8
             },
             {
-              "Line": 13,
+              "Line": 21,
               "Offset": 34,
               "EndOffset": 36,
               "Path": 0,
@@ -273,7 +279,7 @@
               "Hits": 8
             },
             {
-              "Line": 13,
+              "Line": 21,
               "Offset": 42,
               "EndOffset": 46,
               "Path": 1,
@@ -281,7 +287,7 @@
               "Hits": 7
             },
             {
-              "Line": 13,
+              "Line": 21,
               "Offset": 34,
               "EndOffset": 60,
               "Path": 1,
@@ -289,7 +295,7 @@
               "Hits": 1
             },
             {
-              "Line": 13,
+              "Line": 21,
               "Offset": 42,
               "EndOffset": 60,
               "Path": 0,
@@ -300,25 +306,25 @@
         },
         "Microsoft.AspNetCore.Http.IResult ResultsKit.Http.Process::ApiResult(ResultsKit.Result`1<T>)": {
           "Lines": {
-            "19": 3,
-            "20": 3,
-            "21": 3,
-            "22": 5,
-            "23": 1,
-            "24": 3,
-            "25": 3
+            "27": 5,
+            "28": 5,
+            "29": 5,
+            "30": 9,
+            "31": 1,
+            "32": 5,
+            "33": 5
           },
           "Branches": [
             {
-              "Line": 22,
+              "Line": 30,
               "Offset": 15,
               "EndOffset": 19,
               "Path": 1,
               "Ordinal": 1,
-              "Hits": 2
+              "Hits": 4
             },
             {
-              "Line": 22,
+              "Line": 30,
               "Offset": 15,
               "EndOffset": 33,
               "Path": 0,
@@ -329,39 +335,39 @@
         },
         "Microsoft.AspNetCore.Http.IResult ResultsKit.Http.Process::ToProblemResult(ResultsKit.Error)": {
           "Lines": {
-            "28": 7,
-            "29": 7,
-            "30": 7,
-            "31": 7,
-            "32": 7,
-            "33": 7,
-            "34": 7
+            "36": 7,
+            "37": 7,
+            "38": 7,
+            "39": 7,
+            "40": 7,
+            "41": 7,
+            "42": 7
           },
           "Branches": []
         },
         "System.Collections.Generic.Dictionary`2<System.String,System.Object> ResultsKit.Http.Process::CreateExtensions(ResultsKit.Error)": {
           "Lines": {
-            "37": 7,
-            "38": 7,
-            "40": 7,
-            "43": 1,
-            "44": 1,
-            "45": 1,
-            "47": 1,
-            "48": 1,
-            "49": 1,
-            "50": 1,
+            "45": 7,
+            "46": 7,
+            "48": 7,
+            "51": 1,
             "52": 1,
             "53": 1,
-            "54": 2,
             "55": 1,
             "56": 1,
-            "59": 7,
-            "60": 7
+            "57": 1,
+            "58": 1,
+            "60": 1,
+            "61": 1,
+            "62": 2,
+            "63": 1,
+            "64": 1,
+            "67": 7,
+            "68": 7
           },
           "Branches": [
             {
-              "Line": 40,
+              "Line": 48,
               "Offset": 23,
               "EndOffset": 25,
               "Path": 0,
@@ -369,7 +375,7 @@
               "Hits": 6
             },
             {
-              "Line": 40,
+              "Line": 48,
               "Offset": 34,
               "EndOffset": 36,
               "Path": 0,
@@ -377,7 +383,7 @@
               "Hits": 5
             },
             {
-              "Line": 40,
+              "Line": 48,
               "Offset": 45,
               "EndOffset": 47,
               "Path": 0,
@@ -385,7 +391,7 @@
               "Hits": 4
             },
             {
-              "Line": 40,
+              "Line": 48,
               "Offset": 23,
               "EndOffset": 67,
               "Path": 1,
@@ -393,7 +399,7 @@
               "Hits": 1
             },
             {
-              "Line": 40,
+              "Line": 48,
               "Offset": 34,
               "EndOffset": 107,
               "Path": 1,
@@ -401,7 +407,7 @@
               "Hits": 1
             },
             {
-              "Line": 40,
+              "Line": 48,
               "Offset": 45,
               "EndOffset": 165,
               "Path": 1,
@@ -409,7 +415,7 @@
               "Hits": 1
             },
             {
-              "Line": 40,
+              "Line": 48,
               "Offset": 58,
               "EndOffset": 185,
               "Path": 1,
@@ -417,7 +423,7 @@
               "Hits": 2
             },
             {
-              "Line": 54,
+              "Line": 62,
               "Offset": 192,
               "EndOffset": 196,
               "Path": 1,
@@ -425,7 +431,7 @@
               "Hits": 1
             },
             {
-              "Line": 40,
+              "Line": 48,
               "Offset": 58,
               "EndOffset": 217,
               "Path": 0,
@@ -433,7 +439,7 @@
               "Hits": 7
             },
             {
-              "Line": 54,
+              "Line": 62,
               "Offset": 192,
               "EndOffset": 217,
               "Path": 0,
@@ -444,20 +450,20 @@
         },
         "System.Int32 ResultsKit.Http.Process::GetStatusCode(ResultsKit.Error)": {
           "Lines": {
-            "63": 13,
-            "64": 13,
-            "65": 13,
-            "66": 4,
-            "67": 2,
-            "68": 2,
-            "69": 2,
-            "70": 3,
             "71": 13,
-            "72": 13
+            "72": 13,
+            "73": 13,
+            "74": 4,
+            "75": 2,
+            "76": 2,
+            "77": 2,
+            "78": 3,
+            "79": 13,
+            "80": 13
           },
           "Branches": [
             {
-              "Line": 64,
+              "Line": 72,
               "Offset": 11,
               "EndOffset": 13,
               "Path": 0,
@@ -465,7 +471,7 @@
               "Hits": 9
             },
             {
-              "Line": 64,
+              "Line": 72,
               "Offset": 19,
               "EndOffset": 21,
               "Path": 0,
@@ -473,7 +479,7 @@
               "Hits": 7
             },
             {
-              "Line": 64,
+              "Line": 72,
               "Offset": 27,
               "EndOffset": 29,
               "Path": 0,
@@ -481,7 +487,7 @@
               "Hits": 5
             },
             {
-              "Line": 64,
+              "Line": 72,
               "Offset": 11,
               "EndOffset": 39,
               "Path": 1,
@@ -489,7 +495,7 @@
               "Hits": 4
             },
             {
-              "Line": 64,
+              "Line": 72,
               "Offset": 19,
               "EndOffset": 47,
               "Path": 1,
@@ -497,7 +503,7 @@
               "Hits": 2
             },
             {
-              "Line": 64,
+              "Line": 72,
               "Offset": 27,
               "EndOffset": 55,
               "Path": 1,
@@ -505,7 +511,7 @@
               "Hits": 2
             },
             {
-              "Line": 64,
+              "Line": 72,
               "Offset": 35,
               "EndOffset": 63,
               "Path": 1,
@@ -513,7 +519,7 @@
               "Hits": 2
             },
             {
-              "Line": 64,
+              "Line": 72,
               "Offset": 35,
               "EndOffset": 71,
               "Path": 0,
@@ -521,6 +527,17 @@
               "Hits": 3
             }
           ]
+        }
+      },
+      "ResultsKit.Http.Process/<ApiResult>d__4`1": {
+        "System.Void ResultsKit.Http.Process/<ApiResult>d__4`1::MoveNext()": {
+          "Lines": {
+            "9": 1,
+            "10": 1,
+            "11": 1,
+            "12": 1
+          },
+          "Branches": []
         }
       }
     }

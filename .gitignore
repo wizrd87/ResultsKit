@@ -403,3 +403,4 @@ ASALocalRun/
 
 # Local History for Visual Studio
 .localhistory/
+test/ResultsKit.Http.Tests/coverage.json
